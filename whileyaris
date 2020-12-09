@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define tavbuy 0.038
+#define kusbuy 0.012
+
+int main()
+{
+    int tavsay=1042;
+    int kussay=2272;
+    int yil=0;
+    
+    while(kussay>=tavsay)
+    {
+        tavsay+=tavsay*tavbuy;
+        kussay+=kussay*kusbuy;
+        yil++;
+        
+        printf("%d. Yil Tavsan Sayisi : %d Kus Sayisi %d",yil,tavsay,kussay);
+        
+    }
+    return 0;
+}
